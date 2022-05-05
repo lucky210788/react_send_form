@@ -1,0 +1,55 @@
+@import '../../../scss/variables';
+
+.upload-file {
+  display: flex;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+
+  &__label {
+    border: 1px solid $text_color;
+    border-radius: 4px 0 0 4px;
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 52px;
+    width: 84px;
+    &__error {
+      border-color: #CB3D40;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    left: 14px;
+    top: 55px;
+    font-size: 12px;
+    color: #d32f2f;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .file-preview {
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 52px;
+    color: #7E7E7E;
+    text-align: left;
+    border: 1px solid #D0CFCF;
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+    width: calc(100% - 84px);
+
+    &__active {
+      cursor: pointer;
+    }
+
+    &__error {
+      border-color: #CB3D40;
+      color: $text_color;
+    }
+  }
+}

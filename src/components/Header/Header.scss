@@ -1,0 +1,22 @@
+.header {
+  background-color: #fff;
+  padding: 13px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    height: 26px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+

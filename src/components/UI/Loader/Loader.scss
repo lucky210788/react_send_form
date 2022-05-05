@@ -1,0 +1,18 @@
+@import '../../../scss/variables';
+
+.loader{
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  color: $secondary_color;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: loader 1.2s linear infinite;
+  margin: 0 auto 40px;
+}
+
+@keyframes loader{
+  to{
+    transform: rotate(360deg);
+  }
+}

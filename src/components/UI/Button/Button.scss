@@ -1,0 +1,38 @@
+@import '../../../scss/variables';
+
+.btn {
+  font-size: 16px;
+  line-height: 34px;
+  color: $text_color;
+  background: $primary_color;
+  border-radius: 80px;
+  width: 120px;
+  border: none;
+
+  &__small {
+    width: 100px;
+  }
+
+  &__header {
+    margin-left: 10px;
+
+    &__ml {
+      margin-left: 0;
+    }
+  }
+
+  &:hover {
+    background: $secondary_color;
+  }
+
+  &:disabled {
+    background: $third_color;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .btn__small {
+    width: 82px;
+  }
+}

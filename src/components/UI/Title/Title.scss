@@ -1,0 +1,20 @@
+.title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto 50px;
+
+  &__first-screen {
+    color: #FFFFFF;
+    margin: 0 auto 21px;
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title__first-screen {;
+      max-width: 328px;
+      width: 100%;
+  }
+}

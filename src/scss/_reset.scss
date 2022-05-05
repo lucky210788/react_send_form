@@ -1,0 +1,101 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+body {
+  font-family: $primary_font;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $text_color;
+  background-color: $bg_color;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none
+  }
+}
+
+:focus-visible {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+
+}
+
+img {
+  width: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1199px) {
+  .container {
+    max-width: 904px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 704px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

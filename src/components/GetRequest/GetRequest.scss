@@ -1,0 +1,17 @@
+.get-request {
+  padding-top: 140px;
+}
+
+.users-list{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto 21px;
+}
+
+@media only screen and (max-width: 767px) {
+  .users-list{
+    margin: 0 auto 30px;
+  }
+}

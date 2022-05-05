@@ -1,0 +1,23 @@
+.first-screen {
+  padding: 164px 0 163px;
+  background: url("../../assets/img/bg.jpg") no-repeat;
+  background-size: cover;
+
+  &__text {
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto 32px;
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .first-screen {
+    padding: 40px 0 71px;
+
+    &__text {
+      max-width: 328px;
+      width: 100%;
+    }
+  }
+}
